@@ -8,7 +8,7 @@ class Mapa {
 	
 	static hasMany = [rotas:Rota]
 	
-	static mappedBy = ["mapa":Rota]
+	static mappedBy = [rotas:"mapa"]
 	
     static constraints = {
 		nome nullable:false
