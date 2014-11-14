@@ -1,4 +1,0 @@
-sislog
-======
-
-Sistema de Logistica
