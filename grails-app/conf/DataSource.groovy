@@ -1,9 +1,20 @@
-dataSource {
+/*dataSource {
     pooled = true
     jmxExport = true
     driverClassName = "org.h2.Driver"
     username = "sa"
     password = ""
+}*/
+dataSource {
+	dbCreate = "create" // one of 'create', 'create-drop','update'
+	driverClassName = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+	//url = "jdbc:sqlserver://devdb02:1433;databaseName=my_database;"
+	dialect = org.hibernate.dialect.SQLServerDialect
+	//driverClassName = 'net.sourceforge.jtds.jdbc.Driver'
+	username = 'sislogdb@ave6xc95cw'
+	password = 'rAPHAEL6'
+	url = 'jdbc:sqlserver://ave6xc95cw.database.windows.net:1433;databaseName=sislog'
+	//url = "jdbc:sqlserver://ave6xc95cw.database.windows.net:1433;database=sislog;user=sislogdb@ave6xc95cw;password={sua_senha_aqui};encrypt=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -15,7 +26,7 @@ hibernate {
 }
 
 // environment specific settings
-environments {
+/*environments {
     development {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
@@ -54,4 +65,4 @@ environments {
             }
         }
     }
-}
+}*/
