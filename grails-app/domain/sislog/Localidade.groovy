@@ -9,4 +9,6 @@ class Localidade {
 	static mappedBy = [rotasDestino:"destino", rotasOrigem:'origem']
 	
 	static constraints = { nome unique:true }
+	
 }
+

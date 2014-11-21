@@ -31,6 +31,12 @@ grails.mime.types = [ // the first one is the default format
     xml:           ['text/xml', 'application/xml']
 ]
 
+tomcat.deploy.username="admin"
+
+tomcat.deploy.password="123456"
+
+tomcat.deploy.url="http://sislog.azurewebsites.net/manager/text"
+
 // URL Mapping Cache Max Size, defaults to 5000
 //grails.urlmapping.cache.maxsize = 1000
 

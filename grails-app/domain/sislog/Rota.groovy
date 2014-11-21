@@ -3,13 +3,9 @@ package sislog
 import java.nio.MappedByteBuffer;
 
 class Rota {	
-	Localidade origem
-	
-	Localidade destino
-	
 	Double kilometragem
 	
-	static belongsTo = [mapa:Mapa]	
+	static belongsTo = [mapa:Mapa, origem:Localidade,destino:Localidade]	
 	
     static constraints = {
 		origem nullable:false

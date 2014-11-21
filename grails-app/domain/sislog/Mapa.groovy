@@ -13,4 +13,5 @@ class Mapa {
     static constraints = {
 		nome nullable:false
     }
+	static fetchMode = [rotas: 'eager']
 }
